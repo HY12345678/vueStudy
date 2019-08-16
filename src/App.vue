@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container p-5">
+      <!-- <div class="alert alert-primary" v-show="show">
+        消息提示
+      </div> -->
+      <!-- $refs案例 -->
+      <!-- <demo-ref></demo-ref> -->
+
+      <!-- provide案例 -->
+      <demo-provide></demo-provide>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import demoRef  from "@/components/ref-parent-children/demo.vue";
+import demoProvide  from "@/components/provide/demo.vue";
 export default {
   name: 'app',
   components: {
-    HelloWorld
-  }
+    // demoRef
+    demoProvide
+  },
+  data(){
+    return{
+      // show:false
+    }
+    
+  },
+  methods:{
+    // showHide(data){
+    //   this.show=data;
+    // }
+  },
+  // provide(){
+  //   return{
+  //     show:this.show,
+  //     showHide:this.showHide,
+  //   }
+  // }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
