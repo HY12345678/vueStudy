@@ -7,18 +7,28 @@
       <!-- <demo-ref></demo-ref> -->
 
       <!-- provide案例 -->
-      <demo-provide></demo-provide>
+      <!-- <demo-provide></demo-provide> -->
+
+      <!-- $on与$emit案例 -->
+      <!-- <demo-on-emit></demo-on-emit> -->
+
+      <!-- 自定义组件v-model案例 实现v-model双向绑定-->
+            <demo-vmodel></demo-vmodel>
   </div>
 </template>
 
 <script>
 // import demoRef  from "@/components/ref-parent-children/demo.vue";
-import demoProvide  from "@/components/provide/demo.vue";
+// import demoProvide  from "@/components/provide/demo.vue";
+// import demoOnEmit  from "@/components/on-emit/demo.vue";
+import demoVmodel  from "@/components/v-model/demo.vue";
 export default {
   name: 'app',
   components: {
     // demoRef
-    demoProvide
+    // demoProvide
+    demoVmodel
+    // demoOnEmit
   },
   data(){
     return{
